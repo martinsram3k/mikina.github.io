@@ -1,11 +1,130 @@
 <html>
+
+
 <head>
-  <title>Title of the document</title>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, rgb(73, 73, 255), rgb(0, 0, 255), purple, purple, rgb(47, 0, 53))
+    }
+
+    #snow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    .image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 97%;
+      height: flexible;
+      border: transparent;
+      border-width: 10px;
+      border-style: outset;
+    }
+
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+      script.onload = function () {
+        particlesJS("snow", {
+          "particles": {
+            "number": {
+              "value": 200,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "opacity": {
+              "value": 0.7,
+              "random": false,
+              "anim": {
+                "enable": false
+              }
+            },
+            "size": {
+              "value": 5,
+              "random": true,
+              "anim": {
+                "enable": false
+              }
+            },
+            "line_linked": {
+              "enable": false
+            },
+            "move": {
+              "enable": true,
+              "speed": 5,
+              "direction": "bottom",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": true,
+                "rotateX": 300,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "events": {
+              "onhover": {
+                "enable": false
+              },
+              "onclick": {
+                "enable": false
+              },
+              "resize": false
+            }
+          },
+          "retina_detect": true
+        });
+      }
+      document.head.append(script);
+    });
+
+
+  </script>
+
+  <title>9.a</title>
 </head>
 
 <body>
-    <img src="https://scontent-prg1-1.xx.fbcdn.net/v/t1.15752-9/255736844_2855115184785862_1488666095444340636_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=y-_B-77vk6sAX9CgG87&_nc_ht=scontent-prg1-1.xx&oh=4d07d7591cc8af0fcb05cb75144361cb&oe=61B5A025" alt="alternatetext">
-jdsanananananjasdnjanjdnasjdnajndjanj
+  <div>
+    <img class="image"
+      src="https://scontent-prg1-1.xx.fbcdn.net/v/t1.15752-9/255773486_867471227297500_2078001278148393479_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Xm-aNIe0pIUAX_mWKbi&_nc_ht=scontent-prg1-1.xx&oh=e4c37849a11790190d8f4eb1abde3787&oe=61B4F4E1">
+  </div>
+
+  <div>
+    <img class="image"
+      src="https://scontent-prg1-1.xx.fbcdn.net/v/t1.15752-9/256395831_620159372516103_4977412320267478297_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Mat4y4tNMcoAX-3h-CK&_nc_ht=scontent-prg1-1.xx&oh=491cc2136becdc8f0a56c696140a182d&oe=61B63625">
+  </div>
+
+  <div>
+    <img class="image"
+      src="https://media.discordapp.net/attachments/906548570251993119/909081204358275072/256846797_395241342293393_2636119798763478039_n.jpg">
+  </div>
+
+  <div>
+    <img class="image"
+      src="https://scontent-prg1-1.xx.fbcdn.net/v/t1.15752-9/249576847_1534949593548132_3422836229019825028_n.png?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=QHXMDxTSo1oAX9pUU7O&_nc_ht=scontent-prg1-1.xx&oh=1ff33f7ba722a9c13557d1f894c3d180&oe=61C59297">
+  </div>
+
+<!-- <div id="snow"></div> -->
+
 </body>
 
 </html>
